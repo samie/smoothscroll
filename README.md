@@ -18,6 +18,11 @@ With this extension you can scroll to specific Component in a [Scrollable](https
 	scrollExtension.scrollTo(label);
 
 
+Demo
+=======
+
+Demo is available at [sami.app.fi/smoothscroll](http://sami.app.fi/smoothscroll)
+
 Relevant files
 =======
 
