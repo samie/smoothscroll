@@ -1,4 +1,4 @@
-package org.vaadin.example.panelscroll;
+package org.vaadin.example.smoothscroll;
 
 import com.vaadin.annotations.JavaScript;
 import com.vaadin.server.AbstractJavaScriptExtension;

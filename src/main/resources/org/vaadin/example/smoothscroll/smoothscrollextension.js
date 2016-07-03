@@ -1,4 +1,4 @@
-window.org_vaadin_example_panelscroll_SmoothScrollExtension = function() {
+window.org_vaadin_example_smoothscroll_SmoothScrollExtension = function() {
 	
     "use strict";
 

@@ -1,4 +1,4 @@
-package org.vaadin.example.panelscroll;
+package org.vaadin.example.smoothscroll;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -30,7 +30,7 @@ import com.vaadin.ui.themes.ValoTheme;
  */
 @Theme("mytheme")
 @Push
-public class PanelScrollSampleUI extends UI {
+public class SmoothScrollSampleUI extends UI {
 
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
@@ -140,7 +140,7 @@ public class PanelScrollSampleUI extends UI {
 	}
 
 	@WebServlet(urlPatterns = "/*", name = "PanelScrollSampleUI", asyncSupported = true)
-	@VaadinServletConfiguration(ui = PanelScrollSampleUI.class, productionMode = false)
+	@VaadinServletConfiguration(ui = SmoothScrollSampleUI.class, productionMode = false)
 	public static class MyUIServlet extends VaadinServlet {
 	}
 }
