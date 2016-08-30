@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addon</groupId>
     <artifactId>smoothscroll</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <organization>
         <name>Vaadin Community</name>
@@ -23,7 +23,7 @@
         <url>git://github.com/samie/smoothscroll.git</url>
         <connection>scm:git:git://github.com/samie/smoothscroll.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/samie/smoothscroll.git</developerConnection>
-      <tag>smoothscroll-1.0</tag>
+      <tag>HEAD</tag>
   </scm>
     <issueManagement>
         <system>GitHub</system>
