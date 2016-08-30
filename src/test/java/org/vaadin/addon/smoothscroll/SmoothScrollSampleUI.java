@@ -1,21 +1,17 @@
-package org.vaadin.example.smoothscroll;
+package org.vaadin.addon.smoothscroll;
 
-import javax.servlet.annotation.WebServlet;
+import org.vaadin.addonhelpers.AbstractTest;
+import org.vaadin.example.smoothscroll.SmoothScrollExtension;
 
 import com.vaadin.annotations.Push;
-import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.VaadinServletConfiguration;
-import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.Panel;
-import com.vaadin.ui.TextField;
-import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 
@@ -28,18 +24,18 @@ import com.vaadin.ui.themes.ValoTheme;
  * intended to be overridden to add component to the user interface and
  * initialize non-component functionality.
  */
-@Theme("mytheme")
 @Push
-public class SmoothScrollSampleUI extends UI {
+public class SmoothScrollSampleUI extends AbstractTest {
+	
+	private static final long serialVersionUID = 1L;
 
-	@Override
-	protected void init(VaadinRequest vaadinRequest) {
+    @Override
+    public Component getTestComponent() {
 
 		VerticalLayout content = new VerticalLayout();
 		content.setSizeFull();
 		content.setMargin(true);
 		content.setSpacing(true);
-		setContent(content);
 
 		// Panel for scrolling content
 		Panel panel = new Panel("This is a scrollable Panel");
@@ -136,11 +132,8 @@ public class SmoothScrollSampleUI extends UI {
 		HorizontalLayout buttons = new HorizontalLayout(first, last, random, randomTimer);
 		buttons.setSpacing(true);
 		content.addComponent(buttons);
-
+		
+		return content;
 	}
 
-	@WebServlet(urlPatterns = "/*", name = "PanelScrollSampleUI", asyncSupported = true)
-	@VaadinServletConfiguration(ui = SmoothScrollSampleUI.class, productionMode = false)
-	public static class MyUIServlet extends VaadinServlet {
-	}
 }
