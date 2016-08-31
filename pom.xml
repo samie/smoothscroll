@@ -2,7 +2,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addon</groupId>
     <artifactId>smoothscroll</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <name>SmoothScroll</name>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <organization>
         <name>Vaadin Community</name>
