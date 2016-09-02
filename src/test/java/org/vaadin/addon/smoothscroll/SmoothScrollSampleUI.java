@@ -1,7 +1,7 @@
 package org.vaadin.addon.smoothscroll;
 
+import org.vaadin.addon.smoothscroll.SmoothScrollExtension;
 import org.vaadin.addonhelpers.AbstractTest;
-import org.vaadin.example.smoothscroll.SmoothScrollExtension;
 
 import com.vaadin.annotations.Push;
 import com.vaadin.server.FontAwesome;
